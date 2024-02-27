@@ -1,0 +1,4 @@
+resource_group_name  = "rg-tfstate-glob-euw"
+storage_account_name = "stglobeuw01"
+container_name       = "stblc-glob-euw-01"
+key                  = "it_dev.terraform.tfstate"
