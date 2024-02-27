@@ -1,3 +1,4 @@
+/*
 data "azurerm_virtual_network" "hub_vnet" {
   name                = var.hub_vnet_name
   resource_group_name = var.hub_resource_group_name
@@ -18,6 +19,7 @@ resource "azurerm_virtual_network" "spoke_vnet" {
     ]
   }
 }
+*/
 
 resource "azurerm_subnet" "subnet_aks" {
   name                 = var.subnet_aks_name
@@ -41,6 +43,7 @@ resource "azurerm_subnet" "subnet_private_endpoints" {
   }
 }
 
+/*
 resource "azurerm_virtual_network_peering" "hub_to_spoke_peering" {
   name                         = var.hub_to_spoke_peering_name
   resource_group_name          = data.azurerm_virtual_network.hub_vnet.resource_group_name
@@ -70,3 +73,4 @@ resource "azurerm_virtual_network_peering" "spoke_to_hub_peering" {
     prevent_destroy = true
   }
 }
+*/
