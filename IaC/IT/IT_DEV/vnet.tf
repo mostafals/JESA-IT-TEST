@@ -3,6 +3,7 @@ data "azurerm_virtual_network" "hub_vnet" {
   name                = var.hub_vnet_name
   resource_group_name = var.hub_resource_group_name
 }
+*/
 
 resource "azurerm_virtual_network" "spoke_vnet" {
   name                = var.spoke_vnet_name
@@ -19,7 +20,6 @@ resource "azurerm_virtual_network" "spoke_vnet" {
     ]
   }
 }
-*/
 
 resource "azurerm_subnet" "subnet_aks" {
   name                 = var.subnet_aks_name
