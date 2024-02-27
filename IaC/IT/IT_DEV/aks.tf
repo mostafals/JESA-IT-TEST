@@ -19,10 +19,12 @@ locals {
   skip_service_principal_aad_check = true
 }
 
+/*
 data "azurerm_container_registry" "acr" {
   resource_group_name = var.acr_resource_group_name
   name                = var.acr_name
 }
+*/
 
 resource "azurerm_kubernetes_cluster" "aks" {
   name                         = var.aks_cluster_name
@@ -115,9 +117,11 @@ resource "azurerm_kubernetes_cluster_node_pool" "aks_user_node_pool" {
   }
 }
 
+/*
 resource "azurerm_role_assignment" "aks_acr_role_assignment" {
   principal_id                     = azurerm_kubernetes_cluster.aks.kubelet_identity[0].object_id
   role_definition_name             = local.aks_acr_role_assignment.role_definition_name
   scope                            = data.azurerm_container_registry.acr.id
   skip_service_principal_aad_check = local.skip_service_principal_aad_check
 }
+*/
