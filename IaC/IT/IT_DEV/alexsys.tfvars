@@ -94,12 +94,12 @@ private_service_connection_cosmosdb_account_name = "privateservcosmosdbitdev01"
 cosmosdb_account_private_endpoint_tags           = { Environment = "Dev", Department = "IT" }
 
 
-webapp_service_plan_name = "asp-it-dev-euw-dev-lgn"
+webapp_service_plan_name = "asp-it-dev-euw-dev-01"
 webapp_service_sku       = "S1"
 webapp_service_os        = "Linux"
 webapp_service_plan_tags = { Environment = "Dev", Department = "IT" }
 
-webapp_name = "app-it-dev-euw-dev-lgn"
+webapp_name = "app-it-dev-euw-dev-lg"
 webapp_tags = { Environment = "Dev", Department = "IT" }
 
 webapp_dev_slot_name = "dev"
@@ -110,7 +110,7 @@ webapp_enabled      = true
 webapp_https_only   = true
 
 
-storage_account_name                          = "stitdeveuwdevlgn"
+storage_account_name                          = "stitdeveuwdevlg"
 storage_account_tier                          = "Standard"
 storage_account_replication_type              = "LRS"
 storage_account_kind                          = "StorageV2"
